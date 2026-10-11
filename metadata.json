@@ -1,0 +1,11 @@
+{
+  "name": "RE-Genesis Intelligence",
+  "description": "An interactive AI assistant with a floating, customizable avatar head. Features draggable UI components and a dynamic, holographic background simulation with real-time personality and bond metrics.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ],
+  "prompt": ""
+}
