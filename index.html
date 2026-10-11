@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RE-Genesis Intelligence</title>
+    <meta name="description" content="An interactive AI assistant with a floating, customizable avatar head. Features draggable UI components and a dynamic, holographic background simulation with real-time personality and bond metrics." />
+    <meta property="og:title" content="RE-Genesis Intelligence" />
+    <meta property="og:description" content="An interactive AI assistant with a floating, customizable avatar head. Features draggable UI components and a dynamic, holographic background simulation with real-time personality and bond metrics." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes gradient-animation {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+      body {
+        background: linear-gradient(-45deg, #0f0c29, #1a1a2e, #16213e);
+        background-size: 400% 400%;
+        animation: gradient-animation 25s ease infinite;
+        color: #e5e7eb;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.02);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(139, 92, 246, 0.3);
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(139, 92, 246, 0.5);
+      }
+      .resizable-window {
+        resize: both;
+        overflow: hidden !important;
+      }
+    </style>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
